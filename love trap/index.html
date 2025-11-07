@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Love Trap</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <div class="card" id="card">
+      <h1 class="question">do u love me?</h1>
+
+      <div class="buttons" id="buttons">
+        <button id="yesBtn" class="btn btn-yes" aria-label="Yes, I love you" tabindex="0">
+          Yes
+        </button>
+
+        <button id="noBtn" class="btn btn-no" aria-label="No" tabindex="0">
+          No
+        </button>
+      </div>
+
+      <p class="hint"></p>
+    </div>
+  </main>
+
+  <!-- overlay shown after Yes -->
+  <div id="overlay" class="overlay" aria-hidden="true" role="dialog" aria-label="Thank you">
+    <div class="overlay-content" id="overlayContent">
+      <div class="heart" aria-hidden="true"></div>
+      <h2>I knew that you would... get a life.</h2>
+      <p>Just for fun.</p>
+      <button id="closeOverlay" class="btn btn-close">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
